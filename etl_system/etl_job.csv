@@ -1,6 +1,6 @@
-JOB_NAME	QUERY_ID	TARGET_TABLE	P_KEY	STATUS	LAST_UPDATED_DT
-bitcoin_inputs	2177353	input		1	
-bitcoin_output	2177447	output		1	
-prices_usd	5816212	price_usd		1	
-bitcoin_transactions	2177280	transactions		1	
-bitcoin_block	2177266	block		1	
+JOB_NAME,QUERY_ID,TARGET_TABLE,P_KEY,STATUS,ACTIVE,START_TS,END_TS,ERROR_MESSAGE,LAST_UPDATED_TS
+bitcoin_inputs,2177353,input,tx_id,1,1,,,,
+bitcoin_output,2177447,output,tx_id,1,1,,,,
+prices_usd,5816212,price_usd,date,1,1,,,,
+bitcoin_transactions,2177280,transactions,id,1,1,,,,
+bitcoin_block,2177266,block,hash,1,1,,,,

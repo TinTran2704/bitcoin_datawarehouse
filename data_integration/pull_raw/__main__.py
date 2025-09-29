@@ -81,7 +81,7 @@ class DuneBitcoinPipeline:
         self, 
         table_name: str, 
         query_id: int,
-        incremental_column: str = 'updated_at',
+        incremental_column: str = 'date',
         source_unique_keys: List[str] = None
     ):
         """Sync table using incremental strategy."""
@@ -114,7 +114,7 @@ class DuneBitcoinPipeline:
             # Use last value as parameter for incremental sync
             query_parameters = str(last_value) if last_value else None
             
-            self.dune_to_pg_worker.run(
+            self.dune_to_pg_worker.fetch(
                 query_id=query_id,
                 query_parameters=query_parameters,
                 source_unique_keys=source_unique_keys or ['id'],
