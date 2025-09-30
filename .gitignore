@@ -3,8 +3,7 @@ notebook/
 
 
 # Env
-bin/set_env.sh
-bin/windows/set_env.bat
+bin/set_env.bat
 conf
 
 

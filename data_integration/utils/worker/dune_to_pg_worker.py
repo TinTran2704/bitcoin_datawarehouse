@@ -10,8 +10,9 @@ import sqlalchemy
 
 # Local imports
 from . import DuneExtractor, PgLoader
-from data_integration.arguments import FULL_REFRESH, INCREMENTAL_VALUE
-
+#from data_integration.arguments import FULL_REFRESH, INCREMENTAL_VALUE
+FULL_REFRESH = True
+INCREMENTAL_VALUE = True
 class DuneToPgWorker(object):
     def __init__(
         self, 

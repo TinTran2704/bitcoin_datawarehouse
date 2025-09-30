@@ -1,6 +1,5 @@
 
 from .dune_extractor import DuneExtractor
-from .pg_extractor import PgExtractor
 
 from .pg_loader import PgLoader
 
