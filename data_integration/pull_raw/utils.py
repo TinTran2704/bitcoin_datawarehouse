@@ -18,11 +18,11 @@ from datetime import datetime
 def get_tables_to_sync():
     # Kết nối đến database (thay bằng thông tin thực tế của bạn)
     conn = psycopg2.connect(
-        dbname=os.environ.get('PG_DATA_WAREHOUSE_DATABASE'),
-        user=os.environ.get('PG_DATA_WAREHOUSE_DATABASE'),
-        password=os.environ.get('PG_DATA_WAREHOUSE_DATABASE_PASSWORD'),
-        host=os.environ.get('PG_DATA_WAREHOUSE_HOST'),
-        port=os.environ.get('PG_DATA_WAREHOUSE_PORT')
+        dbname= "postgres",# dbname=os.environ.get('PG_DATA_WAREHOUSE_DATABASE'),
+        user= "postgres",# user=os.environ.get('PG_DATA_WAREHOUSE_DATABASE'),
+        password= "tranbaotin",# password=os.environ.get('PG_DATA_WAREHOUSE_DATABASE_PASSWORD'),
+        host= "localhost",# host=os.environ.get('PG_DATA_WAREHOUSE_HOST'),
+        port= 5432# port=os.environ.get('PG_DATA_WAREHOUSE_PORT')
     )
 
     try:
@@ -65,11 +65,11 @@ def get_tables_to_sync():
 def start_job(job_name):
     # Kết nối đến database (thay bằng thông tin thực tế của bạn)
     conn = psycopg2.connect(
-        dbname=os.environ.get('PG_DATA_WAREHOUSE_DATABASE'),
-        user=os.environ.get('PG_DATA_WAREHOUSE_DATABASE'),
-        password=os.environ.get('PG_DATA_WAREHOUSE_DATABASE_PASSWORD'),
-        host=os.environ.get('PG_DATA_WAREHOUSE_HOST'),
-        port=os.environ.get('PG_DATA_WAREHOUSE_PORT')
+        dbname= "postgres",# dbname=os.environ.get('PG_DATA_WAREHOUSE_DATABASE'),
+        user= "postgres",# user=os.environ.get('PG_DATA_WAREHOUSE_DATABASE'),
+        password= "tranbaotin",# password=os.environ.get('PG_DATA_WAREHOUSE_DATABASE_PASSWORD'),
+        host= "localhost",# host=os.environ.get('PG_DATA_WAREHOUSE_HOST'),
+        port= 5432# port=os.environ.get('PG_DATA_WAREHOUSE_PORT')
     )
 
     try:
@@ -105,11 +105,11 @@ def start_job(job_name):
 def end_job(job_name):
     # Kết nối đến database (thay bằng thông tin thực tế của bạn)
     conn = psycopg2.connect(
-        dbname=os.environ.get('PG_DATA_WAREHOUSE_DATABASE'),
-        user=os.environ.get('PG_DATA_WAREHOUSE_DATABASE'),
-        password=os.environ.get('PG_DATA_WAREHOUSE_DATABASE_PASSWORD'),
-        host=os.environ.get('PG_DATA_WAREHOUSE_HOST'),
-        port=os.environ.get('PG_DATA_WAREHOUSE_PORT')
+        dbname= "postgres",# dbname=os.environ.get('PG_DATA_WAREHOUSE_DATABASE'),
+        user= "postgres",# user=os.environ.get('PG_DATA_WAREHOUSE_DATABASE'),
+        password= "tranbaotin",# password=os.environ.get('PG_DATA_WAREHOUSE_DATABASE_PASSWORD'),
+        host= "localhost",# host=os.environ.get('PG_DATA_WAREHOUSE_HOST'),
+        port= 5432# port=os.environ.get('PG_DATA_WAREHOUSE_PORT')
     )
 
     try:
