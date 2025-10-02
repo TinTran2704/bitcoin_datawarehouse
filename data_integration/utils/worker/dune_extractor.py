@@ -32,7 +32,7 @@ class DuneExtractor:
             api_key (str): Your Dune Analytics API key
             poll_interval (int): Polling interval in seconds (default: 5)
         """
-        self.api_key = os.environ.get('DUNE_API_KEY')
+        self.api_key = api_key
         self.poll_interval = poll_interval
         
         # Set up headers

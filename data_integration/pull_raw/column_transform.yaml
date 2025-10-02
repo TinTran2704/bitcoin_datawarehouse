@@ -1,0 +1,51 @@
+tables:
+  - name: bitcoin_inputs
+    columns:
+      - address:
+        tx_id: transaction_id
+        value: bitcoin_amount
+    transform:
+      - dimension_attribute_name: UPPER([entity])
+
+  - name: bitcoin_output
+    columns:
+      - address:
+        tx_id: transaction_id
+        value: bitcoin_amount
+    transform:
+      - dimension_attribute_name: UPPER([entity])
+
+  - name: prices_usd
+    columns:
+      - date:
+        price: price_in_dollar
+    transform:
+      - dimension_attribute_name: UPPER([entity])
+
+  - name: bitcoin_transactions
+    columns:
+      - block_time:
+        fee: dimension_attribute_record_id
+        id: transaction_id
+        input_value:
+        output_value:
+    transform:
+      - dimension_attribute_name: UPPER([entity])
+
+  - name: bitcoin_block
+    columns:
+      - coinbase:
+        difficulty: 
+        hash: 
+        height: 
+        mint_reward: 
+        nonce: 
+        previous_block_hash: 
+        size: 
+        total_fees: 
+        total_reward: 
+        transaction_count: 
+        weight: 
+    transform:
+      - dimension_attribute_name: UPPER([entity])
+  
